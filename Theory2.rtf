@@ -1,0 +1,61 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-BoldOblique;\f1\fswiss\fcharset0 Helvetica;\f2\fswiss\fcharset0 Helvetica-Oblique;
+\f3\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red56\green56\blue76;
+\red56\green55\blue76;\red255\green255\blue255;\red53\green53\blue53;\red67\green67\blue67;\red31\green31\blue31;
+\red68\green68\blue67;\red24\green25\blue27;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c99985\c0;\cssrgb\c28472\c28492\c37014;
+\cssrgb\c28314\c28321\c36914;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c27119\c27119\c27051;\cssrgb\c33370\c33370\c33328;\cssrgb\c16113\c16113\c16073;
+\cssrgb\c33479\c33479\c33312;\cssrgb\c12633\c13030\c14144;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\i\b\fs24 \cf0 Theory questions
+\f1\i0\b0 \
+\
+1. When should you use classification over regression?\
+\cf2 \cb3 -	\cb3 Classification approximates a function \cb3 \expnd0\expndtw0\kerning0
+from input variables to identify 
+\f2\i discrete
+\f1\i0  output variables, that can be labels or categories. Regression is responsible for a continuous flow of output therefore classification is preferred when we have clear cut distinction between 
+\fs32 \cf5 \cb6 \
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+2. How do you deal with the class imbalance in a classification problem?\
+- \cf2 \cb6 Class imbalance problem can be mitigated by \expnd0\expndtw0\kerning0
+sampling based approaches and cost function based approaches.\
+\pard\pardeftab720\qj\partightenfactor0
+\cf2 The cost function based approaches are: if we think one false negative is worse than one false positive, we will count that one false negative as, e.g., 100 false negatives instead. \
+The Sampling based approaches can be classified into 3 types:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\qj\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	A)	}\expnd0\expndtw0\kerning0
+Oversampling, by adding more of the minority class so it has more effect on the machine learning algorithm\
+\ls1\ilvl0\kerning1\expnd0\expndtw0    B)	\expnd0\expndtw0\kerning0
+Undersampling, by removing some of the majority class so it has less effect on the machine learning algorithm\
+\ls1\ilvl0\kerning1\expnd0\expndtw0    C)	\expnd0\expndtw0\kerning0
+Hybrid, a mix of oversampling and undersampling\kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1 \
+3. What is a confusion matrix and why do you need it?\
+-	
+\f3 \cf2 \expnd0\expndtw0\kerning0
+A confusion matrix is a method for explaining the performance of a classification algorithm. It\'92s like a table used to summarise the working of the classification algorithm. We need such a thing because sometimes classification accuracy alone can be misleading if we have an unequal number of observations in each class or have more than two classes in the dataset. It can help sort out the accuracy and errors.
+\f1 \cf0 \kerning1\expnd0\expndtw0 \
+\
+4. What is the difference between sigmoid and softmax function?\
+-SIgmoid and Softmax are 2 typea of activation functions.\
+\cf2 \cb6 Sigmoid Activation Function is a mathematical function with a conspicuous \'92S\'92 shape. \AppleTypeServices\AppleTypeServicesF65539 \expnd0\expndtw0\kerning0
+If we want to have a classifier to solve a problem with more than one right answer, the Sigmoid Function is the right choice. We should apply this function to each element of the raw output independently. The return value of Sigmoid Function is mostly in the range of values between 0 and 1 or -1 and 1.\
+\pard\pardeftab720\partightenfactor0
+\cf2 The Softmax Activation Function takes vectors of real numbers as inputs, and normalizes them into a probability distribution proportional to the exponentials of the input numbers. Before applying, some input data could be negative or greater than 1. Also, they might not sum up to 1. After applying Softmax, each element will be in the range of 0 to 1, and the elements will add up to 1. This way, they can be interpreted as a probability distribution.\AppleTypeServices \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+5. Why is logistic regression a type of classification technique and not a regression? Name the function it is derived from?\
+-\cf2 \cb6 	\expnd0\expndtw0\kerning0
+\shad\shadx20\shady-20\shadr20\shado0 \shadc0 Logistic regression is a supervised learning classification algorithm used to predict the probability of a target variable. It is also known as sigmoid function. It was \shad0 developed by statisticians to describe properties of population growth in ecology, rising quickly and maxing out at the carrying capacity of the environment.\
+				1 / (1 + e^-value)\
+\pard\pardeftab720\partightenfactor0
+\cf2 It is named 'Logistic Regression' because its underlying technique is quite the same as Linear Regression. The term \'93Logistic\'94 is taken from the Logit function that is used in this method of classification.}
